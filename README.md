@@ -41,7 +41,7 @@ Per salvare il tuo lavoro: **File → Salva una copia in Drive**.
 | 3 | L4 | Raggruppare, riassumere, grafici | [dispensa](lezioni/L04_raggruppare/dispensa.md) · slide [pdf](lezioni/L04_raggruppare/slide.pdf) / [pptx](lezioni/L04_raggruppare/slide.pptx) · [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/andrealorenzon/SIMA2026/blob/main/lezioni/L04_raggruppare/L04_task.ipynb) · [soluzioni](https://github.com/andrealorenzon/SIMA2026/tree/soluzioni/L04_raggruppare) |
 | 3 | L5 | Unire tabelle | [dispensa](lezioni/L05_unire/dispensa.md) · slide [pdf](lezioni/L05_unire/slide.pdf) / [pptx](lezioni/L05_unire/slide.pptx) · [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/andrealorenzon/SIMA2026/blob/main/lezioni/L05_unire/L05_task.ipynb) · [soluzioni](https://github.com/andrealorenzon/SIMA2026/tree/soluzioni/L05_unire) |
 | 4 | E2 | Esercitazione: descrittive e unione | in preparazione |
-| 4 | L6 | Funzioni e cicli: automatizzare | in preparazione |
+| 4 | L6 | Funzioni e cicli: automatizzare | [dispensa](lezioni/L06_funzioni_cicli/dispensa.md) · slide [pdf](lezioni/L06_funzioni_cicli/slide.pdf) / [pptx](lezioni/L06_funzioni_cicli/slide.pptx) · [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/andrealorenzon/SIMA2026/blob/main/lezioni/L06_funzioni_cicli/L06_task.ipynb) · [soluzioni](https://github.com/andrealorenzon/SIMA2026/tree/soluzioni/L06_funzioni_cicli) |
 | 5 | L7 | Dati da internet e una regressione | in preparazione |
 | 5 | E3 | Esercitazione: automazione | in preparazione |
 | 6 | L8 | Dal notebook allo script `.py` | in preparazione |
