@@ -60,6 +60,8 @@ df["regione"]
 
 Si possono combinare: `df.iloc[100:110][["id_impresa", "anno"]]` prende le righe dalla 100 alla 109 e solo due colonne.
 
+Nella condizione, `==` è il confronto visto nella L1: per ogni riga chiede "l'anno è uguale a 2020?" e risponde `True` o `False`. Il DataFrame tiene solo le righe con `True`. Con un solo `=` otterresti un errore.
+
 ## Slicing: come funzionano gli indici
 
 Lo **slicing** (affettare) è il modo in cui Python prende un pezzo di una sequenza: una lista, un testo, le righe di un DataFrame. Funziona sempre allo stesso modo.
