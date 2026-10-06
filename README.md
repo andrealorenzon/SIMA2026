@@ -51,8 +51,13 @@ Per salvare il tuo lavoro: **File → Salva una copia in Drive**.
 
 La cartella [`dati/`](dati/) contiene i dataset sintetici usati nel corso:
 
-- `imprese.xlsx`: 500 imprese italiane osservate dal 2019 al 2023
+- `imprese.xlsx`: 500 imprese italiane osservate dal 2019 al 2023, così come arrivano (da pulire)
+- `imprese_pulito.xlsx`: lo stesso dataset dopo la pulizia della L3
+- `per_regione/`: un file per regione (L6, E3)
 - `regioni.xlsx`: informazioni sulle regioni italiane
+- `esportazioni.xlsx`: esportazioni di un'azienda immaginaria (E1)
+
+La descrizione delle colonne è in [`dati/README.md`](dati/README.md).
 
 I dati sono **inventati** e servono solo a scopo didattico.
 
