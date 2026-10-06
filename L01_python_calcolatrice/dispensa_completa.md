@@ -7,6 +7,7 @@
 - Aprire un notebook in Colab ed eseguire codice
 - Chiedere codice a Gemini e leggerlo
 - Creare variabili e fare calcoli
+- Distinguere `=` (assegnare) da `==` (confrontare)
 - Riconoscere i tipi di dato principali
 - Leggere un messaggio di errore e cercarlo online
 
@@ -33,6 +34,17 @@ montante = capitale * (1 + tasso) ** 10
 ```
 
 Il simbolo `=` non significa "uguale" come in matematica: significa "metti questo valore in questa etichetta".
+
+### `=` e `==`
+
+| Simbolo | Nome | Cosa fa | Esempio | Risultato |
+|---|---|---|---|---|
+| `=` | assegnazione | **mette** un valore in una variabile (un ordine) | `prezzo = 12.5` | nessuno: ora `prezzo` vale 12.5 |
+| `==` | confronto | **chiede** se due cose sono uguali (una domanda) | `prezzo == 12.5` | `True` |
+
+Altri confronti: `>` maggiore, `<` minore, `>=` maggiore o uguale, `<=` minore o uguale, `!=` diverso. Rispondono sempre `True` o `False`, cioè un valore di tipo `bool`.
+
+**Attenzione:** scambiare `=` con `==` non dà errore. Scrivere `prezzo = 13` quando volevi chiedere `prezzo == 13` cambia il valore di `prezzo` in silenzio.
 
 ## Tipi di dato
 
