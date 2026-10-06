@@ -12,7 +12,15 @@ Ogni incontro dura circa 2 ore:
 2. **Task**: un notebook a piccoli passi. Per ogni passo trovi cosa cercare su Google; Gemini è a disposizione
 3. **Debrief**: come ha funzionato, e i concetti dietro il codice che hai scritto
 
+Si lavora in **gruppi da 3**, con tre ruoli che ruotano a ogni passo: chi **scrive** (condivide lo schermo e scrive il codice), chi **cerca** (Google, Gemini, dispense), chi **controlla** (il risultato ha senso? il numero torna?).
+
 L'obiettivo non è imparare tutto a memoria, ma saper cercare quello che serve e **verificare** che il codice (anche quello scritto dall'AI) faccia davvero ciò che deve.
+
+## Prima del corso
+
+Un mini tutorial da fare da soli, prima della prima lezione (circa 20 minuti): come usare Gemini in Colab, e come non fidarsi troppo.
+
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/andrealorenzon/SIMA2026/blob/main/preparazione/00_gemini_colab.ipynb) [`preparazione/00_gemini_colab.ipynb`](preparazione/00_gemini_colab.ipynb)
 
 ## Le soluzioni
 
