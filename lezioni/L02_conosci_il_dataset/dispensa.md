@@ -70,14 +70,13 @@ Trucco: in Colab scrivi `df.` e premi **Tab** per vedere tutto quello che puoi c
 
 Non serve ricordare i comandi: serve ricordare **le domande**. I comandi si cercano.
 
-## Cosa abbiamo trovato in `imprese.xlsx`
+## 🎯 Sfida
 
-- Il **fatturato è letto come testo**: il file usa la virgola decimale italiana e contiene valori `n.d.`. La media dà errore; il massimo invece restituisce `'n.d.'`, perché confronta testi in ordine alfabetico.
-- Ci sono **2.515 righe** invece delle 2.500 attese (500 imprese × 5 anni).
-- La stessa **regione è scritta in modi diversi** (`Lombardia`, `lombardia`, `LOMBARDIA`, `Lombardia ` con uno spazio finale).
-- C'è un'impresa con **addetti negativi**.
+Il file `imprese.xlsx` arriva "come da un collega": **contiene almeno quattro problemi**. Nessuno è nascosto, ma solo uno produce un messaggio di errore. Gli altri vanno cercati con le domande qui sopra e un po' di buon senso.
 
-Solo uno di questi problemi ha prodotto un errore. Gli altri erano silenziosi. Li sistemiamo nella prossima lezione.
+Un suggerimento per iniziare: sai quante imprese e quanti anni ci sono. Quante righe ti aspetti?
+
+Le soluzioni sono disponibili dopo la lezione, ma leggerle prima ti toglie l'unica cosa che conta: arrivarci da solo.
 
 ## Compito a casa
 

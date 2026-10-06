@@ -27,9 +27,9 @@ Per salvare il tuo lavoro: **File → Salva una copia in Drive**.
 Una variabile è un'etichetta attaccata a un valore.
 
 ```python
-capitale = 5000
-tasso = 0.025
-montante = capitale * (1 + tasso) ** 10
+prezzo = 12.5
+quantita = 40
+ricavo = prezzo * quantita
 ```
 
 Il simbolo `=` non significa "uguale" come in matematica: significa "metti questo valore in questa etichetta".
@@ -38,49 +38,43 @@ Il simbolo `=` non significa "uguale" come in matematica: significa "metti quest
 
 | Tipo | Esempio | Cos'è |
 |---|---|---|
-| `int` | `5000` | numero intero |
-| `float` | `0.025` | numero decimale |
-| `str` | `"5000"` | testo (stringa), sempre tra virgolette |
+| `int` | `40` | numero intero |
+| `float` | `12.5` | numero decimale |
+| `str` | `"Milano"` | testo (stringa), sempre tra virgolette |
 | `bool` | `True`, `False` | vero o falso |
 
-Per sapere il tipo di una variabile: `type(capitale)`.
+Per sapere il tipo di una variabile: `type(prezzo)`.
 
-**Attenzione:** in Python i decimali si scrivono con il punto (`0.025`), non con la virgola.
+**Attenzione:** in Python i decimali si scrivono con il punto (`12.5`), non con la virgola.
 
-Lo stesso simbolo fa cose diverse a seconda del tipo:
-
-```python
-5000 * 2      # 10000
-"5000" * 2    # "50005000"  <- ripete il testo!
-```
-
-Per convertire: `int("5000")`, `float("0.025")`, `str(5000)`.
+Python tratta i tipi in modo diverso, e lo stesso simbolo può fare cose diverse a seconda del tipo. Nel task lo scoprirai da solo.
 
 ## Operazioni utili
 
-| Operazione | Simbolo | Esempio |
-|---|---|---|
-| somma, differenza | `+` `-` | `5000 + 125` |
-| prodotto, divisione | `*` `/` | `5000 * 0.025` |
-| potenza | `**` | `1.025 ** 10` |
-| arrotondamento | `round()` | `round(6400.4227, 2)` |
+| Operazione | Simbolo |
+|---|---|
+| somma, differenza | `+` `-` |
+| prodotto, divisione | `*` `/` |
+| potenza | `**` |
+| arrotondamento | `round()` |
 
 ## Stampare
 
 ```python
-print(montante)
-print(f"Dopo 10 anni Marco avrà {montante} euro")
+print(ricavo)
 ```
 
-La `f` prima delle virgolette (f-string) permette di inserire variabili nel testo con le `{}`.
+Per inserire una variabile dentro una frase esiste un modo comodo: cerca **f-string**.
 
 ## Gli errori
 
 Quando qualcosa va storto, Python mostra un messaggio. **L'ultima riga è la più importante**: dice il tipo di errore e la causa.
 
 ```
-TypeError: can only concatenate str (not "int") to str
+NameError: name 'ricavi' is not defined
 ```
+
+(Qui la variabile si chiamava `ricavo`, non `ricavi`.)
 
 Cosa fare:
 1. Leggi l'ultima riga.
@@ -95,6 +89,12 @@ Cosa fare:
 - Leggi il codice che ti propone: capisci cosa fa ogni riga?
 - Verifica il risultato: è plausibile?
 - Se qualcosa non ti è chiaro, chiedi a Gemini di spiegarlo.
+
+## 🎯 Sfida
+
+Nel task ci sono **due trappole**: una dà un errore, l'altra no. Trovale e spiega perché succedono.
+
+Le soluzioni sono disponibili dopo la lezione, ma leggerle prima ti toglie l'unica cosa che conta: arrivarci da solo.
 
 ## Compito a casa
 

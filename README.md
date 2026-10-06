@@ -14,6 +14,12 @@ Ogni incontro dura circa 2 ore:
 
 L'obiettivo non è imparare tutto a memoria, ma saper cercare quello che serve e **verificare** che il codice (anche quello scritto dall'AI) faccia davvero ciò che deve.
 
+## Le soluzioni
+
+Le soluzioni di ogni lezione (notebook risolti, risposte, slide del debrief) sono in un'area separata, raggiungibile dal link **soluzioni** nella tabella del programma.
+
+Sono lì per dopo la lezione. Leggerle prima ti toglie l'unica cosa che conta: arrivarci da solo.
+
 ## Cosa ti serve
 
 - Un account Google (per Colab)
@@ -28,8 +34,8 @@ Per salvare il tuo lavoro: **File → Salva una copia in Drive**.
 
 | Sett. | Incontro | Argomento | Materiali |
 |---|---|---|---|
-| 1 | L1 | Colab, Gemini, variabili e tipi, leggere un errore | [dispensa](lezioni/L01_python_calcolatrice/dispensa.md) · slide [pdf](lezioni/L01_python_calcolatrice/slide.pdf) / [pptx](lezioni/L01_python_calcolatrice/slide.pptx) · [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/andrealorenzon/SIMA2026/blob/main/lezioni/L01_python_calcolatrice/L01_task.ipynb) |
-| 1 | L2 | Caricare un file Excel, il DataFrame, ispezionare i dati | [dispensa](lezioni/L02_conosci_il_dataset/dispensa.md) · slide [pdf](lezioni/L02_conosci_il_dataset/slide.pdf) / [pptx](lezioni/L02_conosci_il_dataset/slide.pptx) · [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/andrealorenzon/SIMA2026/blob/main/lezioni/L02_conosci_il_dataset/L02_task.ipynb) |
+| 1 | L1 | Colab, Gemini, variabili e tipi, leggere un errore | [dispensa](lezioni/L01_python_calcolatrice/dispensa.md) · slide [pdf](lezioni/L01_python_calcolatrice/slide.pdf) / [pptx](lezioni/L01_python_calcolatrice/slide.pptx) · [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/andrealorenzon/SIMA2026/blob/main/lezioni/L01_python_calcolatrice/L01_task.ipynb) · [soluzioni](https://github.com/andrealorenzon/SIMA2026/tree/soluzioni/L01_python_calcolatrice) |
+| 1 | L2 | Caricare un file Excel, il DataFrame, ispezionare i dati | [dispensa](lezioni/L02_conosci_il_dataset/dispensa.md) · slide [pdf](lezioni/L02_conosci_il_dataset/slide.pdf) / [pptx](lezioni/L02_conosci_il_dataset/slide.pptx) · [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/andrealorenzon/SIMA2026/blob/main/lezioni/L02_conosci_il_dataset/L02_task.ipynb) · [soluzioni](https://github.com/andrealorenzon/SIMA2026/tree/soluzioni/L02_conosci_il_dataset) |
 | 2 | L3 | Pulizia dei dati e verifica | in preparazione |
 | 2 | E1 | Esercitazione: pulizia | in preparazione |
 | 3 | L4 | Raggruppare, riassumere, grafici | in preparazione |
