@@ -44,7 +44,7 @@ Per salvare il tuo lavoro: **File → Salva una copia in Drive**.
 | 4 | L6 | Funzioni e cicli: automatizzare | [dispensa](lezioni/L06_funzioni_cicli/dispensa.md) · slide [pdf](lezioni/L06_funzioni_cicli/slide.pdf) / [pptx](lezioni/L06_funzioni_cicli/slide.pptx) · [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/andrealorenzon/SIMA2026/blob/main/lezioni/L06_funzioni_cicli/L06_task.ipynb) · [soluzioni](https://github.com/andrealorenzon/SIMA2026/tree/soluzioni/L06_funzioni_cicli) |
 | 5 | L7 | Dati da internet e una regressione | [dispensa](lezioni/L07_internet_regressione/dispensa.md) · slide [pdf](lezioni/L07_internet_regressione/slide.pdf) / [pptx](lezioni/L07_internet_regressione/slide.pptx) · [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/andrealorenzon/SIMA2026/blob/main/lezioni/L07_internet_regressione/L07_task.ipynb) · [soluzioni](https://github.com/andrealorenzon/SIMA2026/tree/soluzioni/L07_internet_regressione) |
 | 5 | E3 | Esercitazione: automazione | in preparazione |
-| 6 | L8 | Dal notebook allo script `.py` | in preparazione |
+| 6 | L8 | Dal notebook allo script `.py` | [dispensa](lezioni/L08_script/dispensa.md) · slide [pdf](lezioni/L08_script/slide.pdf) / [pptx](lezioni/L08_script/slide.pptx) · [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/andrealorenzon/SIMA2026/blob/main/lezioni/L08_script/L08_task.ipynb) · [soluzioni](https://github.com/andrealorenzon/SIMA2026/tree/soluzioni/L08_script) |
 | 6 | E4 | Mini-progetto finale | in preparazione |
 
 ## Dati
