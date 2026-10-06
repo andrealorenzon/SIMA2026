@@ -73,7 +73,7 @@ In Colab, per avere i file del corso:
 
 I file compaiono nel pannello a sinistra (icona della cartella). Il `!` all'inizio dice a Colab di eseguire un comando del sistema, non Python.
 
-## Dizionari
+## Dizionari (ripasso dalla L3)
 
 Un **dizionario** associa delle chiavi a dei valori, tra parentesi graffe:
 

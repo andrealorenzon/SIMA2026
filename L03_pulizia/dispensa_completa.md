@@ -6,6 +6,7 @@
 
 - Trovare ed eliminare righe duplicate
 - Lavorare sulle colonne di testo
+- Usare un dizionario
 - Convertire testo in numeri senza perdere dati
 - Modificare solo le righe che rispettano una condizione
 - Correggere una singola cella in modo sicuro e documentato
@@ -65,7 +66,19 @@ I comandi si possono **concatenare**: `df["citta"].str.strip().str.lower()`.
 
 **Attenzione:** i comandi automatici come `.str.title()` sono comodi ma non conoscono le eccezioni della lingua. Controlla sempre il risultato.
 
-Per sostituire valori interi (non pezzi di testo) c'è `.replace()` con un dizionario:
+## I dizionari
+
+Un **dizionario** è una piccola tabella di coppie *chiave → valore*, scritta tra parentesi graffe:
+
+```python
+capoluoghi = {"Lazio": "Roma", "Veneto": "Venezia"}
+capoluoghi["Lazio"]              # "Roma": con la chiave leggi il valore
+capoluoghi["Puglia"] = "Bari"    # aggiunge una coppia
+```
+
+Funziona come un vocabolario: cerchi la parola (la chiave), trovi la definizione (il valore). Le chiavi non si ripetono.
+
+Per sostituire valori interi (non pezzi di testo) c'è `.replace()` con un dizionario, usato come tabella di correzioni *valore sbagliato → valore giusto*:
 
 ```python
 df["citta"] = df["citta"].replace({"Milan": "Milano", "Roma Capitale": "Roma"})
