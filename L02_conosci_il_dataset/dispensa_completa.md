@@ -166,6 +166,7 @@ Solo uno di questi problemi ha prodotto un errore. Gli altri erano silenziosi. L
 ## Compito a casa
 
 - [Kaggle Learn – Pandas](https://www.kaggle.com/learn/pandas): le prime due lezioni, **Creating, Reading and Writing** e **Indexing, Selecting & Assigning** (~40 min)
+- Gli esercizi **C1** e **C2** in fondo al notebook del task (~15 min): servono nella L3
 
 ## Per approfondire
 

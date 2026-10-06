@@ -81,7 +81,7 @@ Lo script girava senza errori e dava numeri plausibili: i due sbagli si trovano 
 
 ## Compito a casa
 
-- Lavora al mini-progetto finale (E4): scegli la domanda e i dati.
+- **Obbligatorio prima della E4:** scegli la domanda e i dati per il mini-progetto, e mandali al docente in due righe.
 
 ## Per approfondire
 
