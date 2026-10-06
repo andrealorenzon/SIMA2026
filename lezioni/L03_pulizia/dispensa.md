@@ -8,6 +8,7 @@
 - Lavorare sulle colonne di testo
 - Convertire testo in numeri senza perdere dati
 - Modificare solo le righe che rispettano una condizione
+- Correggere una singola cella in modo sicuro e documentato
 - Riconoscere e contare i valori mancanti
 - Verificare ogni correzione
 
@@ -86,6 +87,22 @@ df.loc[condizione, "prezzo"] = None
 ```
 
 Si legge: "nelle righe dove la condizione è vera, nella colonna `prezzo`, metti un valore mancante". Una condizione è una colonna di `True`/`False`; con `.sum()` conti quante righe la rispettano.
+
+## Correggere una cella a mano
+
+A volte sai qual è il valore giusto (te l'ha detto chi ha raccolto i dati, l'hai controllato sulla fonte). In Excel clicchi sulla cella e lo scrivi; in Python lo scrivi **nel codice**, così la correzione resta documentata e si può rifare.
+
+```python
+riga = (df["cliente"] == "C042") & (df["anno"] == 2021)
+print(riga.sum())                 # deve dare 1: una sola riga
+df.loc[riga, "ordini"] = 12
+```
+
+Due regole:
+- **Individua la riga per contenuto, non per numero.** `df.loc[500, "ordini"] = 12` funziona oggi, ma dopo un ordinamento o dopo aver tolto delle righe la riga 500 è un'altra: la correzione finisce nel posto sbagliato, senza errori.
+- **Controlla prima di modificare**: `riga.sum()` deve dare 1. Se dà 0 la condizione è sbagliata; se dà di più stai per cambiare più celle.
+
+Per unire due condizioni si usa `&` ("e"), e ogni condizione va tra parentesi. Per "oppure" si usa `|`.
 
 ## Valori mancanti
 
