@@ -87,6 +87,28 @@ dalla fine: -6  -5  -4  -3  -2  -1
 
 Funziona anche sui testi: `"Milano"[0:3]` dà `"Mil"`.
 
+### Omettere l'inizio o la fine
+
+Se l'inizio è 0 puoi ometterlo; se la fine è la fine della sequenza puoi ometterla:
+
+| Scrittura | Equivale a | Risultato |
+|---|---|---|
+| `x[:3]` | `x[0:3]` | A B C |
+| `x[3:]` | `x[3:6]` | D E F |
+| `x[:]` | `x[0:6]` | tutto |
+
+### Il passo
+
+Lo slicing ha un terzo numero, il **passo**: `[inizio:fine:passo]` prende una casella ogni *passo*.
+
+| Scrittura | Risultato | Significato |
+|---|---|---|
+| `x[::2]` | A C E | una ogni due, dall'inizio |
+| `x[1::2]` | B D F | una ogni due, partendo dalla posizione 1 |
+| `x[::-1]` | F E D C B A | passo negativo: all'indietro, cioè al contrario |
+
+Con un DataFrame: `df.iloc[::100]` mostra una riga ogni 100.
+
 ## iloc e Excel
 
 `df.iloc[righe, colonne]` è come selezionare un intervallo in Excel, con tre differenze:
