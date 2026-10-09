@@ -48,12 +48,38 @@ Per salvare il tuo lavoro: **File → Salva una copia in Drive**.
 | 2 | E1 | Esercitazione: pulizia | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/andrealorenzon/SIMA2026/blob/main/esercitazioni/E1_pulizia/E1_task.ipynb) · [soluzioni](https://github.com/andrealorenzon/SIMA2026/tree/soluzioni/E1_pulizia) |
 | 3 | L4 | Raggruppare, riassumere, grafici | [dispensa](lezioni/L04_raggruppare/dispensa.md) · slide [pdf](lezioni/L04_raggruppare/slide.pdf) / [pptx](lezioni/L04_raggruppare/slide.pptx) · [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/andrealorenzon/SIMA2026/blob/main/lezioni/L04_raggruppare/L04_task.ipynb) · [soluzioni](https://github.com/andrealorenzon/SIMA2026/tree/soluzioni/L04_raggruppare) |
 | 3 | L5 | Unire tabelle | [dispensa](lezioni/L05_unire/dispensa.md) · slide [pdf](lezioni/L05_unire/slide.pdf) / [pptx](lezioni/L05_unire/slide.pptx) · [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/andrealorenzon/SIMA2026/blob/main/lezioni/L05_unire/L05_task.ipynb) · [soluzioni](https://github.com/andrealorenzon/SIMA2026/tree/soluzioni/L05_unire) |
-| 4 | E2 | Esercitazione: descrittive e unione | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/andrealorenzon/SIMA2026/blob/main/esercitazioni/E2_descrittive_unione/E2_task.ipynb) · [soluzioni](https://github.com/andrealorenzon/SIMA2026/tree/soluzioni/E2_descrittive_unione) |
+| 4 | E2 | Esercitazione: innovazione, ESG e performance | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/andrealorenzon/SIMA2026/blob/main/esercitazioni/E2_descrittive_unione/E2_task.ipynb) · [soluzioni](https://github.com/andrealorenzon/SIMA2026/tree/soluzioni/E2_descrittive_unione) |
 | 5 | L6 | Funzioni e cicli: automatizzare | [dispensa](lezioni/L06_funzioni_cicli/dispensa.md) · slide [pdf](lezioni/L06_funzioni_cicli/slide.pdf) / [pptx](lezioni/L06_funzioni_cicli/slide.pptx) · [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/andrealorenzon/SIMA2026/blob/main/lezioni/L06_funzioni_cicli/L06_task.ipynb) · [soluzioni](https://github.com/andrealorenzon/SIMA2026/tree/soluzioni/L06_funzioni_cicli) |
 | 5 | L7 | Dati da internet e una regressione | [dispensa](lezioni/L07_internet_regressione/dispensa.md) · slide [pdf](lezioni/L07_internet_regressione/slide.pdf) / [pptx](lezioni/L07_internet_regressione/slide.pptx) · [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/andrealorenzon/SIMA2026/blob/main/lezioni/L07_internet_regressione/L07_task.ipynb) · [soluzioni](https://github.com/andrealorenzon/SIMA2026/tree/soluzioni/L07_internet_regressione) |
-| 6 | E3 | Esercitazione: automazione | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/andrealorenzon/SIMA2026/blob/main/esercitazioni/E3_automazione/E3_task.ipynb) · [soluzioni](https://github.com/andrealorenzon/SIMA2026/tree/soluzioni/E3_automazione) |
+| 6 | E3 | Esercitazione: automatizzare l'analisi delle recensioni | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/andrealorenzon/SIMA2026/blob/main/esercitazioni/E3_automazione/E3_task.ipynb) · [soluzioni](https://github.com/andrealorenzon/SIMA2026/tree/soluzioni/E3_automazione) |
 | 6 | L8 | Dal notebook allo script `.py` | [dispensa](lezioni/L08_script/dispensa.md) · slide [pdf](lezioni/L08_script/slide.pdf) / [pptx](lezioni/L08_script/slide.pptx) · [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/andrealorenzon/SIMA2026/blob/main/lezioni/L08_script/L08_task.ipynb) · [soluzioni](https://github.com/andrealorenzon/SIMA2026/tree/soluzioni/L08_script) |
 | gennaio | E4 | Mini-progetto finale: lavoro a casa in gruppi da 3, poi la presentazione | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/andrealorenzon/SIMA2026/blob/main/esercitazioni/E4_progetto/E4_task.ipynb) · [soluzioni](https://github.com/andrealorenzon/SIMA2026/tree/soluzioni/E4_progetto) |
+
+## In cosa consiste ogni incontro
+
+**L1 — Python come calcolatrice.** Primo contatto con Colab e Gemini. Variabili, numeri e testo, confronti (`=` e `==`), leggere un messaggio di errore. Il caso: quanto rendono 5.000 € investiti al 2,5%.
+
+**L2 — Conosci il dataset.** Si carica un file Excel di 500 imprese italiane e si impara a guardarlo: dimensioni, tipi di dati, selezionare righe e colonne (lo slicing, `iloc`). Non si corregge niente: si prende nota di cosa non torna.
+
+**L3 — Pulizia.** Si correggono i problemi trovati nella L2: duplicati, numeri scritti come testo, regioni scritte in più modi, valori impossibili o mancanti. La regola: dopo ogni correzione, si verifica.
+
+**E1 — Esercitazione: pulizia.** Le stesse tecniche su un file nuovo, le esportazioni di un'azienda alimentare, con meno indicazioni.
+
+**L4 — Raggruppare e disegnare.** Le prime domande da economisti: fatturato per anno, per regione, per settore. Media e mediana, quante osservazioni ci sono dietro un numero, i primi grafici.
+
+**L5 — Unire tabelle.** Si aggiungono alle imprese le informazioni sulle regioni, come con `CERCA.VERT` in Excel. Dopo ogni unione si contano le righe: chi è sparito, e perché?
+
+**E2 — Esercitazione: innovazione, ESG e performance.** Due domande di management: le imprese che investono di più in ricerca e sviluppo sono più produttive? Quelle con un punteggio ESG più alto vanno meglio? Si uniscono i dati, si confrontano i gruppi e si distingue un'associazione da un effetto.
+
+**L6 — Funzioni e cicli.** Venti file, uno per regione: si scrive il procedimento una volta (una funzione) e lo si ripete su tutti (un ciclo).
+
+**L7 — Dati da internet e una regressione.** Dati veri sulle emissioni di CO₂ e sul PIL di tutti i paesi, scaricati da Our World in Data. Una prima regressione, letta con attenzione: su quante osservazioni è stimata, e cosa non dice.
+
+**E3 — Esercitazione: automatizzare l'analisi delle recensioni.** Una domanda di marketing: cosa apprezzano e cosa criticano i clienti di quattro marche? Una funzione e un ciclo contano le parole in centinaia di recensioni; poi alcune si leggono, per capire cosa vogliono dire.
+
+**L8 — Dal notebook allo script.** Un'analisi che deve essere rifatta va messa in uno script `.py`, che gira da zero. Si impara anche a leggere, e a correggere, il codice scritto da Gemini. Si assegna il mini-progetto.
+
+**E4 — Mini-progetto finale.** Un lavoro a casa, in gruppi da 3: una domanda, dei dati, un'analisi verificata, un grafico e uno script. Le tracce sono di management (innovazione, ESG) e di marketing (recensioni, un esperimento sui messaggi pubblicitari), oppure una domanda vostra. All'ultimo incontro ogni gruppo presenta il suo lavoro.
 
 ## Dati
 
@@ -61,9 +87,12 @@ La cartella [`dati/`](dati/) contiene i dataset sintetici usati nel corso:
 
 - `imprese.xlsx`: 500 imprese italiane osservate dal 2019 al 2023, così come arrivano (da pulire)
 - `imprese_pulito.xlsx`: lo stesso dataset dopo la pulizia della L3
-- `per_regione/`: un file per regione (L6, E3)
+- `per_regione/`: un file per regione (L6)
 - `regioni.xlsx`: informazioni sulle regioni italiane
 - `esportazioni.xlsx`: esportazioni di un'azienda immaginaria (E1)
+- `esg.xlsx`: punteggio ESG delle imprese (E2, mini-progetto)
+- `recensioni/`: recensioni online di quattro marche di caffè in capsule (E3, mini-progetto)
+- `esperimento.xlsx`: un esperimento sui messaggi pubblicitari (mini-progetto)
 
 La descrizione delle colonne è in [`dati/README.md`](dati/README.md).
 
