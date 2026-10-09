@@ -75,7 +75,7 @@ In una regressione **log-log** il coefficiente è un'**elasticità**: di quanti 
 
 ## Compito a casa
 
-- Pensa a una domanda a cui vorresti rispondere con i dati, per il mini-progetto finale.
+- **Obbligatorio prima della L8:** con il vostro gruppo da 3, scegliete la domanda e i dati per il mini-progetto finale e mandateli al docente in due righe. Alla L8 li controlliamo insieme.
 
 ## Per approfondire
 

@@ -81,7 +81,7 @@ Lo script girava senza errori e dava numeri plausibili: i due sbagli si trovano 
 
 ## Compito a casa
 
-- **Obbligatorio prima della E4:** scegli la domanda e i dati per il mini-progetto, e mandali al docente in due righe.
+- **Il mini-progetto finale**, in gruppi da 3: istruzioni e criteri nel notebook dell'E4. Avete tempo fino all'ultimo incontro, in cui ogni gruppo presenta il suo lavoro in circa 10 minuti. Prima delle feste c'è uno sportello facoltativo su Zoom per chi è bloccato.
 
 ## Per approfondire
 
