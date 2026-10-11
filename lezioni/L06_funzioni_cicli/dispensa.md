@@ -65,10 +65,12 @@ for f in file:
     print(f.name, f.stem)                   # "Lazio.xlsx", "Lazio"
 ```
 
+Con i percorsi la barra `/` non divide: **unisce** la cartella e il nome del file. `cartella / "Lazio.xlsx"` dà `SIMA2026/dati/per_regione/Lazio.xlsx`.
+
 In Colab, per avere i file del corso:
 
 ```python
-!git clone -q --depth 1 https://github.com/andrealorenzon/SIMA2026.git
+![ -d SIMA2026 ] || git clone -q --depth 1 https://github.com/andrealorenzon/SIMA2026.git   # solo se la cartella manca
 ```
 
 I file compaiono nel pannello a sinistra (icona della cartella). Il `!` all'inizio dice a Colab di eseguire un comando del sistema, non Python.

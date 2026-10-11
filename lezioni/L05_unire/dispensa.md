@@ -65,6 +65,8 @@ conteggi = df.groupby("regione")["id_impresa"].nunique().reset_index(name="impre
 tab = conteggi.merge(regioni, on="regione", how="left")
 ```
 
+`groupby` mette le regioni nell'**indice** (le etichette delle righe, L4); `reset_index` le riporta in una colonna, così la tabella si può unire. `name="imprese"` dà un nome alla colonna dei conteggi.
+
 ## Mettere in fila: `concat`
 
 Per mettere **una sotto l'altra** due tabelle con le stesse colonne (per esempio due anni, o due file con la stessa struttura):

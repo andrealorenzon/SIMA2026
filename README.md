@@ -12,7 +12,7 @@ Ogni incontro dura circa 2 ore:
 2. **Task**: un notebook a piccoli passi. Per ogni passo trovi cosa cercare su Google; Gemini è a disposizione
 3. **Debrief**: come ha funzionato, e i concetti dietro il codice che hai scritto
 
-Si lavora in **gruppi da 3**, con tre ruoli che ruotano a ogni passo: chi **scrive** (condivide lo schermo e scrive il codice), chi **cerca** (Google, Gemini, dispense), chi **controlla** (il risultato ha senso? il numero torna?).
+Si lavora in **gruppi da 3**, con tre ruoli che ruotano a ogni incontro: chi **scrive** (condivide lo schermo e scrive il codice nel suo notebook), chi **cerca** (Google, Gemini, dispense), chi **controlla** (il risultato ha senso? il numero torna?). Il codice sta tutto nel notebook di chi scrive: a fine lezione lo condivide con gli altri due (**Condividi** → chiunque abbia il link).
 
 L'obiettivo non è imparare tutto a memoria, ma saper cercare quello che serve e **verificare** che il codice (anche quello scritto dall'AI) faccia davvero ciò che deve.
 

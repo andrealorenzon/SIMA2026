@@ -40,6 +40,8 @@ df.groupby("anno")["fatturato"].mean()
 
 Si legge: "per ogni anno, della colonna fatturato, calcola la media". È la tabella pivot di Excel, scritta.
 
+Nel risultato gli anni stanno a sinistra, in grassetto: sono l'**indice**, cioè le etichette delle righe (nella L2 l'indice era solo il numero della riga). Per trasformarli in una colonna normale, per esempio prima di un'unione, si usa `.reset_index()`.
+
 Più statistiche insieme:
 
 ```python
