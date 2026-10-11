@@ -99,7 +99,7 @@ condizione = df["prezzo"] < 0
 df.loc[condizione, "prezzo"] = None
 ```
 
-Si legge: "nelle righe dove la condizione è vera, nella colonna `prezzo`, metti un valore mancante". Una condizione è una colonna di `True`/`False`; con `.sum()` conti quante righe la rispettano.
+Si legge: "nelle righe dove la condizione è vera, nella colonna `prezzo`, metti un valore mancante". Una condizione è una colonna di `True`/`False`; con `.sum()` conti quante righe la rispettano (per Python `True` vale 1 e `False` vale 0). Con `.mean()` ne ottieni invece la **quota**: la media di 1, 0, 1, 1 è 0,75, cioè il 75% delle righe.
 
 ## Correggere una cella a mano
 
