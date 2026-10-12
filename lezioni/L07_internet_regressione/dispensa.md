@@ -6,6 +6,7 @@
 
 - Caricare dati pubblicati online, direttamente dall'indirizzo web
 - Capire cosa rappresenta ogni riga di un dataset che non hai preparato tu
+- Leggere un CSV all'italiana (punto e virgola, virgola decimale)
 - Stimare una regressione lineare e leggerne i risultati principali
 
 ## Dati da internet
@@ -18,6 +19,14 @@ co2 = pd.read_csv(url)
 ```
 
 **CSV** (valori separati da virgola) è il formato più diffuso per i dati pubblici: un file di testo, una riga per osservazione.
+
+**I CSV all'italiana.** In Italia la virgola serve per i decimali, quindi molti file (ISTAT, Banca d'Italia, molti software in italiano) separano le colonne con il **punto e virgola** e scrivono `1.234,5`. Va detto a pandas:
+
+```python
+dati = pd.read_csv("file.csv", sep=";", decimal=",", thousands=".")
+```
+
+Se dopo la lettura vedi **una sola colonna** con dentro tutto, il separatore è sbagliato. Se i numeri risultano di tipo testo (`object`), sono sbagliati i decimali. Se compaiono caratteri strani al posto delle lettere accentate, prova `encoding="latin-1"`.
 
 Vantaggio: rilanci il notebook e hai i dati aggiornati. Rischio: i dati cambiano, e con loro i tuoi risultati. Annota **quando** li hai scaricati, o salvane una copia.
 

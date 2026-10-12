@@ -71,6 +71,17 @@ Con dati **asimmetrici** (redditi, fatturati, patrimoni, prezzi delle case) la m
 
 E soprattutto: **guarda sempre quante osservazioni ci sono dietro un numero.** Una media calcolata su due casi non dice quasi niente.
 
+## Dati panel: la crescita
+
+Il dataset delle imprese è un **panel**: le stesse unità (imprese) osservate più volte (anni). Per confrontare ogni impresa con se stessa l'anno prima, si raggruppa per impresa:
+
+```python
+df = df.sort_values(["id_impresa", "anno"])
+df["crescita"] = df.groupby("id_impresa")["fatturato"].pct_change(fill_method=None) * 100
+```
+
+Il `groupby` è essenziale: senza, il primo anno di ogni impresa verrebbe confrontato con l'ultimo anno dell'impresa precedente. Il primo anno di ogni impresa resta vuoto, perché non ha un anno prima.
+
 ## Grafici
 
 pandas disegna usando la libreria **matplotlib**:
