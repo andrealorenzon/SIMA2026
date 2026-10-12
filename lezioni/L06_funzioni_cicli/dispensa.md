@@ -6,6 +6,7 @@
 
 - Scrivere una funzione e usarla più volte
 - Ripetere un'operazione con un ciclo `for`
+- Far decidere al codice con `if` / `else`
 - Elaborare tutti i file di una cartella
 - Capire su quale file si ferma un ciclo, e perché
 
@@ -53,6 +54,26 @@ for f in file:
     risultati.append(riepilogo(f))
 tab = pd.DataFrame(risultati)     # una lista di dizionari diventa una tabella
 ```
+
+## Decidere: `if`
+
+`if` esegue delle istruzioni **solo se** una condizione è vera. La condizione è un confronto come quelli della L1, che risponde `True` o `False`.
+
+```python
+imprese = 4
+if imprese < 10:
+    nota = "poco affidabile"
+elif imprese < 30:
+    nota = "da usare con cautela"
+else:
+    nota = "ok"
+print(nota)       # poco affidabile
+```
+
+- Dopo la condizione ci vogliono i **due punti**, e le istruzioni vanno **rientrate**, come nelle funzioni e nei cicli.
+- `elif` ("altrimenti, se…") ed `else` ("in tutti gli altri casi") sono facoltativi. Python controlla le condizioni in ordine e si ferma alla prima vera.
+
+**`if` decide su un solo valore.** Per scegliere delle righe di una tabella non si usa `if` ma un filtro (L2, L3): `df[df["addetti"] < 10]`. Scrivere `if df["addetti"] < 10:` dà l'errore *The truth value of a Series is ambiguous*: Python non sa se intendi "tutte le righe" o "almeno una".
 
 ## Lavorare con i file di una cartella
 

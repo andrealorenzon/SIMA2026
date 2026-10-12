@@ -71,7 +71,7 @@ Per salvare il tuo lavoro: **File → Salva una copia in Drive**.
 
 **E2 — Esercitazione: innovazione, ESG e performance.** Due domande di management: le imprese che investono di più in ricerca e sviluppo sono più produttive? Quelle con un punteggio ESG più alto vanno meglio? Si uniscono i dati, si confrontano i gruppi e si distingue un'associazione da un effetto.
 
-**L6 — Funzioni e cicli.** Venti file, uno per regione: si scrive il procedimento una volta (una funzione) e lo si ripete su tutti (un ciclo).
+**L6 — Funzioni e cicli.** Venti file, uno per regione: si scrive il procedimento una volta (una funzione), lo si ripete su tutti (un ciclo) e si fa decidere al codice con `if` (per esempio, segnalare le regioni con troppe poche imprese).
 
 **L7 — Dati da internet e una regressione.** Dati veri sulle emissioni di CO₂ e sul PIL di tutti i paesi, scaricati da Our World in Data. Una prima regressione, letta con attenzione: su quante osservazioni è stimata, e cosa non dice.
 
