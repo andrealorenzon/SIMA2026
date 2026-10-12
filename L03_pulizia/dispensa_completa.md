@@ -10,7 +10,8 @@
 - Convertire testo in numeri senza perdere dati
 - Modificare solo le righe che rispettano una condizione
 - Correggere una singola cella in modo sicuro e documentato
-- Riconoscere e contare i valori mancanti
+- Riconoscere e contare i valori mancanti, e decidere cosa farne
+- Trasformare il testo in date
 - Verificare ogni correzione
 
 ## Pulire è decidere
@@ -130,6 +131,28 @@ Un valore mancante **non è uno zero**. Media di 10, mancante, 20:
 - mettendo 0 al suo posto: (10 + 0 + 20) / 3 = **10**
 
 I calcoli di pandas ignorano i valori mancanti. Riempirli con un numero inventato falsa i risultati.
+
+Cosa farne è una **decisione**, da scrivere come le altre:
+
+| Decisione | Come | Quando ha senso |
+|---|---|---|
+| lasciarli | non fai niente | quasi sempre: media, mediana e `groupby` li ignorano da soli |
+| togliere le righe | `df.dropna(subset=["fatturato"])` | quando un'analisi richiede quel valore (un confronto, un grafico, una regressione) |
+| riempirli | `df["spesa_rs"].fillna(0)` | solo se sai che il mancante vuol dire davvero zero (per esempio: "nessuna spesa") |
+
+Con `subset` togli solo le righe in cui manca **quella** colonna; senza, togli le righe in cui manca **qualunque** colonna, e rischi di perdere molti dati. Conta le righe prima e dopo.
+
+## Le date
+
+Una data scritta come testo (`"15/03/2018"`) per Python è solo una sequenza di caratteri: non si può ordinare né sapere che anno è. `pd.to_datetime` la trasforma in una vera data:
+
+```python
+df["data_costituzione"] = pd.to_datetime(df["data_costituzione"], dayfirst=True)
+df["data_costituzione"].dt.year     # l'anno
+df["data_costituzione"].dt.month    # il mese
+```
+
+`dayfirst=True` dice che il giorno viene prima del mese, come in Italia. Dopo la conversione, conta i valori mancanti: le date che pandas non è riuscito a leggere diventano mancanti.
 
 ## Cosa abbiamo trovato e deciso in `imprese.xlsx`
 

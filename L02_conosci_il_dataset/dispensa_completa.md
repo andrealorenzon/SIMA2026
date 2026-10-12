@@ -6,6 +6,7 @@
 
 - Caricare un file Excel in Python
 - Capire cos'è un DataFrame
+- Usare una lista
 - Selezionare righe e colonne, e capire come funziona lo slicing
 - Distinguere metodi e attributi
 - Trovare da solo i metodi che ti servono nella documentazione
@@ -47,6 +48,21 @@ Per prendere una colonna sola:
 ```python
 df["regione"]
 ```
+
+## Le liste
+
+Una **lista** è una sequenza di valori, tra parentesi quadre e separati da virgole. Può contenere numeri, testi, o qualunque altra cosa.
+
+```python
+regioni = ["Lombardia", "Lazio", "Sicilia"]
+len(regioni)              # 3: quanti elementi
+regioni[0]                # "Lombardia": si conta da 0
+regioni[-1]               # "Sicilia": l'ultimo
+regioni.append("Puglia")  # aggiunge un elemento in fondo
+sorted([3, 8, 1])         # [1, 3, 8]
+```
+
+Le userai di continuo: per indicare più colonne (`df[["regione", "anno"]]`), per raccogliere risultati in un ciclo (L6), per elencare i file di una cartella (L6). Lo slicing che vedi più sotto funziona sulle liste esattamente come sul testo: `regioni[0:2]` dà i primi due elementi.
 
 ## Selezionare righe e colonne
 
