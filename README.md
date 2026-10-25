@@ -22,6 +22,11 @@ Un mini tutorial da fare da soli, prima della prima lezione (circa 20 minuti): c
 
 [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/andrealorenzon/SIMA2026/blob/main/preparazione/00_gemini_colab.ipynb) [`preparazione/00_gemini_colab.ipynb`](preparazione/00_gemini_colab.ipynb)
 
+## Se sei bloccato
+
+- **Durante la lezione:** scrivi nella chat di Zoom, o usa «Chiedi aiuto» nella stanza separata.
+- **Fuori dalla lezione:** in Colab, **Condividi** (in alto a destra) → aggiungi l'indirizzo del docente, che trovi nella mail di inizio corso, con il permesso di **Editor**. Poi scrivigli quale passo non torna e cosa hai già provato.
+
 ## Le soluzioni
 
 Le soluzioni di ogni lezione (notebook risolti, risposte, slide del debrief) sono in un'area separata, raggiungibile dal link **soluzioni** nella tabella del programma.
