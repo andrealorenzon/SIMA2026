@@ -167,7 +167,7 @@ df["data_costituzione"].dt.month    # il mese
 
 **La trappola dell'ordine.** Se si sostituisce prima la virgola con il punto, `"1.032,9"` diventa `"1.032.9"`, che non è un numero: con `errors="coerce"` diventa mancante. Risultato: 1.621 valori mancanti invece di 50, e nessun messaggio di errore. Solo il conteggio dei mancanti lo rivela.
 
-**La trappola di `title()`.** `str.title()` sistema le maiuscole ma trasforma `Valle d'Aosta` in `Valle D'Aosta` e lascia `Emilia Romagna` senza trattino: le regioni restano 21. Il problema si vedrebbe nella L5, unendo i dati con la tabella delle regioni.
+**La trappola di `title()`.** `str.title()` sistema le maiuscole ma trasforma `Valle d'Aosta` in `Valle D'Aosta` e lascia `Emilia Romagna` senza trattino: le regioni restano 21. Il problema si vedrebbe nella L6, unendo i dati con la tabella delle regioni.
 
 ## Compito a casa
 
