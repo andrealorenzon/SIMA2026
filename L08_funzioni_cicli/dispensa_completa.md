@@ -7,6 +7,7 @@
 - Scrivere una funzione e usarla più volte
 - Ripetere un'operazione con un ciclo `for`
 - Far decidere al codice con `if` / `else`
+- Capire cosa fa parte di un blocco, e leggere un `IndentationError`
 - Elaborare tutti i file di una cartella
 - Capire su quale file si ferma un ciclo, e perché
 
@@ -74,6 +75,37 @@ print(nota)       # poco affidabile
 - `elif` ("altrimenti, se…") ed `else` ("in tutti gli altri casi") sono facoltativi. Python controlla le condizioni in ordine e si ferma alla prima vera.
 
 **`if` decide su un solo valore.** Per scegliere delle righe di una tabella non si usa `if` ma un filtro (L2, L3): `df[df["addetti"] < 10]`. Scrivere `if df["addetti"] < 10:` dà l'errore *The truth value of a Series is ambiguous*: Python non sa se intendi "tutte le righe" o "almeno una".
+
+## Blocchi e rientro: la regola generale
+
+Funzioni, cicli e `if` seguono la stessa regola: la riga che li apre finisce con i **due punti** (`:`), e le istruzioni che ne fanno parte sono **rientrate** di 4 spazi. Il blocco finisce alla prima riga che torna a sinistra.
+
+```python
+for f in file:
+    d = pd.read_excel(f)        # dentro il ciclo: si ripete
+    print(f.stem)               # dentro il ciclo: si ripete
+print("fatto")                  # fuori dal ciclo: una volta sola, alla fine
+```
+
+I blocchi si possono mettere uno dentro l'altro: un `if` dentro un ciclo si rientra di altri 4 spazi.
+
+```python
+for f in file:
+    d = pd.read_excel(f)
+    if len(d) < 10:
+        print(f.stem, "poco affidabile")
+```
+
+- In Colab il tasto **Tab** inserisce 4 spazi (Shift + Tab li toglie), e dopo i due punti Colab rientra da solo la riga successiva.
+- Se il rientro è sbagliato, Python si ferma con `IndentationError` (rientro mancante o inatteso). Guarda la riga indicata e quella sopra: spesso mancano i due punti, o una riga è spostata di uno spazio.
+- **Dentro le parentesi il rientro non conta.** Quando un comando lungo va a capo, come un `agg` o un dizionario, il rientro serve solo a leggere meglio: Python lo ignora finché la parentesi non si chiude.
+
+```python
+tab = df.groupby("regione").agg(
+    imprese=("id_impresa", "nunique"),
+    fatturato=("fatturato", "median"),
+)
+```
 
 ## Lavorare con i file di una cartella
 
