@@ -25,7 +25,7 @@ Un mini tutorial da fare da soli, prima della prima lezione (circa 20 minuti): c
 ## Se sei bloccato
 
 - **Durante la lezione:** scrivi nella chat di Zoom, o usa «Chiedi aiuto» nella stanza separata.
-- **Fuori dalla lezione:** in Colab, **Condividi** (in alto a destra) → aggiungi `andrelorenzon+sima2026@gmail.com` con il permesso di **Editor**. Poi scrivigli quale passo non torna e cosa hai già provato.
+- **Fuori dalla lezione:** in Colab, **Condividi** (in alto a destra) → aggiungi `andrelorenzon@gmail.com` con il permesso di **Editor**. Poi scrivigli quale passo non torna e cosa hai già provato.
 
 ## Le soluzioni
 
