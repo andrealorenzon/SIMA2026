@@ -93,7 +93,7 @@ dalla fine: -6  -5  -4  -3  -2  -1
 
 `x[1:4]` taglia al 1 e al 4: prende **B, C, D**. Per questo:
 - il primo numero è **incluso**, il secondo è **escluso**;
-- fine − inizio = quanti elementi ottieni (4 − 1 = 3).
+- $\text{fine} - \text{inizio}$ = quanti elementi ottieni ($4 - 1 = 3$).
 
 | Scrittura | Risultato | Significato |
 |---|---|---|

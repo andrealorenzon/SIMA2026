@@ -56,7 +56,7 @@ Il riepilogo è lungo. Per ora bastano tre numeri:
 | Cosa | Dove | Come si legge |
 |---|---|---|
 | coefficiente | `modello.params` | di quanto cambia y, in media, quando x aumenta di 1 (nelle unità di misura di x e y) |
-| R² | `modello.rsquared` | quota della variabilità di y descritta dal modello, tra 0 e 1 |
+| $R^2$ | `modello.rsquared` | quota della variabilità di y descritta dal modello, tra 0 e 1 |
 | osservazioni | `modello.nobs` | su quante righe è stata stimata |
 
 In una regressione **log-log** il coefficiente è un'**elasticità**: di quanti punti percentuali cambia y quando x cresce dell'1%.

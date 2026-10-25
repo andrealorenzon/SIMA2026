@@ -100,7 +100,7 @@ condizione = df["prezzo"] < 0
 df.loc[condizione, "prezzo"] = None
 ```
 
-Si legge: "nelle righe dove la condizione è vera, nella colonna `prezzo`, metti un valore mancante". Una condizione è una colonna di `True`/`False`; con `.sum()` conti quante righe la rispettano (per Python `True` vale 1 e `False` vale 0). Con `.mean()` ne ottieni invece la **quota**: la media di 1, 0, 1, 1 è 0,75, cioè il 75% delle righe.
+Si legge: "nelle righe dove la condizione è vera, nella colonna `prezzo`, metti un valore mancante". Una condizione è una colonna di `True`/`False`; con `.sum()` conti quante righe la rispettano (per Python `True` vale 1 e `False` vale 0). Con `.mean()` ne ottieni invece la **quota**: la media di 1, 0, 1, 1 è $\frac{1 + 0 + 1 + 1}{4} = 0{,}75$, cioè il 75% delle righe.
 
 ## Correggere una cella a mano
 
@@ -127,8 +127,8 @@ df.isna().sum()          # quanti mancanti in ogni colonna
 ```
 
 Un valore mancante **non è uno zero**. Media di 10, mancante, 20:
-- lasciando il mancante: (10 + 20) / 2 = **15**
-- mettendo 0 al suo posto: (10 + 0 + 20) / 3 = **10**
+- lasciando il mancante: $\frac{10 + 20}{2} = 15$
+- mettendo 0 al suo posto: $\frac{10 + 0 + 20}{3} = 10$
 
 I calcoli di pandas ignorano i valori mancanti. Riempirli con un numero inventato falsa i risultati.
 
