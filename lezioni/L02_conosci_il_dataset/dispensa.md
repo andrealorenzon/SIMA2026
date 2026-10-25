@@ -62,7 +62,7 @@ regioni.append("Puglia")  # aggiunge un elemento in fondo
 sorted([3, 8, 1])         # [1, 3, 8]
 ```
 
-Le userai di continuo: per indicare più colonne (`df[["regione", "anno"]]`), per raccogliere risultati in un ciclo (L6), per elencare i file di una cartella (L6). Lo slicing che vedi più sotto funziona sulle liste esattamente come sul testo: `regioni[0:2]` dà i primi due elementi.
+Le userai di continuo: per indicare più colonne (`df[["regione", "anno"]]`), per raccogliere risultati in un ciclo (L8), per elencare i file di una cartella (L8). Lo slicing che vedi più sotto funziona sulle liste esattamente come sul testo: `regioni[0:2]` dà i primi due elementi.
 
 ## Selezionare righe e colonne
 

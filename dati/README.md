@@ -22,15 +22,15 @@ Il file arriva "come da un collega": prima di usarlo, controllalo.
 
 ## imprese_pulito.xlsx
 
-Lo stesso dataset dopo la pulizia della L3 (2.500 righe, 20 regioni, fatturato numerico). Si usa dalla L4 in poi.
+Lo stesso dataset dopo la pulizia della L3 (2.500 righe, 20 regioni, fatturato numerico). Si usa dalla L5 in poi.
 
 ## per_regione/
 
-Un file Excel per ogni regione, con le stesse colonne di `imprese_pulito.xlsx` (tranne `regione`, che è nel nome del file). Si usa nella L6.
+Un file Excel per ogni regione, con le stesse colonne di `imprese_pulito.xlsx` (tranne `regione`, che è nel nome del file). Si usa nella L8.
 
 ## esportazioni.xlsx
 
-Esportazioni mensili (2022-2023) di un'azienda alimentare immaginaria, per paese e prodotto. Si usa nell'esercitazione E1. Anche questo arriva "come da un collega".
+Esportazioni mensili (2022-2023) di un'azienda alimentare immaginaria, per paese e prodotto. Si usa nell'esercitazione E4. Anche questo arriva "come da un collega".
 
 | Colonna | Descrizione |
 |---|---|
@@ -50,7 +50,7 @@ Esportazioni mensili (2022-2023) di un'azienda alimentare immaginaria, per paese
 
 ## esg.xlsx
 
-Punteggio ESG (ambiente, società, governance) delle imprese di `imprese.xlsx`, una riga per impresa. Si usa nell'esercitazione E2 e nel mini-progetto.
+Punteggio ESG (ambiente, società, governance) delle imprese di `imprese.xlsx`, una riga per impresa. Si usa nell'esercitazione E7 e nel mini-progetto.
 
 | Colonna | Descrizione |
 |---|---|
@@ -59,7 +59,7 @@ Punteggio ESG (ambiente, società, governance) delle imprese di `imprese.xlsx`, 
 
 ## recensioni/
 
-Recensioni online di quattro marche immaginarie di caffè in capsule, un file per marca (il nome del file è la marca). Si usa nell'esercitazione E3 e nel mini-progetto.
+Recensioni online di quattro marche immaginarie di caffè in capsule, un file per marca (il nome del file è la marca). Si usa nell'esercitazione E10 e nel mini-progetto.
 
 | Colonna | Descrizione |
 |---|---|
