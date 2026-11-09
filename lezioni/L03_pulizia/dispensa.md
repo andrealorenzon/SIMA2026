@@ -1,0 +1,172 @@
+# L3 — Pulire i dati
+
+[![Apri in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/andrealorenzon/SIMA2026/blob/main/lezioni/L03_pulizia/L03_task.ipynb)
+
+## Cosa sai fare dopo questa lezione
+
+- Trovare ed eliminare righe duplicate
+- Lavorare sulle colonne di testo
+- Usare un dizionario
+- Convertire testo in numeri senza perdere dati
+- Modificare solo le righe che rispettano una condizione
+- Correggere una singola cella in modo sicuro e documentato
+- Riconoscere e contare i valori mancanti, e decidere cosa farne
+- Trasformare il testo in date
+- Verificare ogni correzione
+
+## Pulire è decidere
+
+Pulire un dataset non è un'operazione automatica: ogni correzione è una **decisione** (questo valore è un errore? lo correggo o lo elimino?). Il ciclo è sempre lo stesso:
+
+1. **Trova** il problema
+2. **Decidi** cosa fare, e perché
+3. **Correggi**
+4. **Verifica** che la correzione abbia fatto quello che volevi
+
+Le decisioni vanno scritte: tra sei mesi non te le ricorderai, e chi legge il tuo lavoro deve poterle controllare.
+
+## La regola: conta prima, conta dopo
+
+Prima di ogni correzione, chiediti quanti valori ti aspetti di cambiare. Dopo, controlla.
+
+```python
+print(df.shape)          # prima
+df = df.drop_duplicates()
+print(df.shape)          # dopo: quante righe sono sparite? Sono quelle previste?
+```
+
+Molti errori di pulizia **non danno messaggi**: il codice gira e ti fa perdere dati in silenzio. L'unica difesa è contare.
+
+## Riassegnare
+
+Quasi tutti i comandi di pandas **non modificano** `df`: restituiscono una copia modificata. Per tenere la modifica devi salvarla:
+
+```python
+df.drop_duplicates()          # mostra il risultato, ma df non cambia
+df = df.drop_duplicates()     # ora df è cambiato
+```
+
+Lo stesso vale per una colonna:
+
+```python
+df["citta"] = df["citta"].str.strip()
+```
+
+## Lavorare sul testo: `.str`
+
+Le colonne di testo hanno un "cassetto" di comandi dedicati, a cui si accede con `.str`:
+
+| Comando | Cosa fa | Esempio |
+|---|---|---|
+| `.str.strip()` | toglie gli spazi all'inizio e alla fine | `" Milano "` → `"Milano"` |
+| `.str.lower()` | tutto minuscolo | `"MILANO"` → `"milano"` |
+| `.str.title()` | iniziali maiuscole | `"milano"` → `"Milano"` |
+| `.str.replace("a", "b")` | sostituisce un pezzo di testo | `"1-2"` → `"1/2"` con `("-", "/")` |
+
+I comandi si possono **concatenare**: `df["citta"].str.strip().str.lower()`.
+
+**Attenzione:** i comandi automatici come `.str.title()` sono comodi ma non conoscono le eccezioni della lingua. Controlla sempre il risultato.
+
+## I dizionari
+
+Un **dizionario** è una piccola tabella di coppie *chiave → valore*, scritta tra parentesi graffe:
+
+```python
+capoluoghi = {"Lazio": "Roma", "Veneto": "Venezia"}
+capoluoghi["Lazio"]              # "Roma": con la chiave leggi il valore
+capoluoghi["Puglia"] = "Bari"    # aggiunge una coppia
+```
+
+Funziona come un vocabolario: cerchi la parola (la chiave), trovi la definizione (il valore). Le chiavi non si ripetono.
+
+Per sostituire valori interi (non pezzi di testo) c'è `.replace()` con un dizionario, usato come tabella di correzioni *valore sbagliato → valore giusto*:
+
+```python
+df["citta"] = df["citta"].replace({"Milan": "Milano", "Roma Capitale": "Roma"})
+```
+
+## Da testo a numero
+
+```python
+pd.to_numeric(df["colonna"], errors="coerce")
+```
+
+Con `errors="coerce"`, tutto quello che non si riesce a convertire diventa un **valore mancante**, senza errori. È comodo, ed è pericoloso: se la conversione è sbagliata, perdi dati senza accorgertene. Dopo una conversione, conta sempre i valori mancanti.
+
+## Modificare solo alcune righe: `.loc`
+
+```python
+condizione = df["prezzo"] < 0
+df.loc[condizione, "prezzo"] = None
+```
+
+Si legge: "nelle righe dove la condizione è vera, nella colonna `prezzo`, metti un valore mancante". Una condizione è una colonna di `True`/`False`; con `.sum()` conti quante righe la rispettano (per Python `True` vale 1 e `False` vale 0). Con `.mean()` ne ottieni invece la **quota**: la media di 1, 0, 1, 1 è $\frac{1 + 0 + 1 + 1}{4} = 0{,}75$, cioè il 75% delle righe.
+
+## Correggere una cella a mano
+
+A volte sai qual è il valore giusto (te l'ha detto chi ha raccolto i dati, l'hai controllato sulla fonte). In Excel clicchi sulla cella e lo scrivi; in Python lo scrivi **nel codice**, così la correzione resta documentata e si può rifare.
+
+```python
+riga = (df["cliente"] == "C042") & (df["anno"] == 2021)
+print(riga.sum())                 # deve dare 1: una sola riga
+df.loc[riga, "ordini"] = 12
+```
+
+Due regole:
+- **Individua la riga per contenuto, non per numero.** `df.loc[500, "ordini"] = 12` funziona oggi, ma dopo un ordinamento o dopo aver tolto delle righe la riga 500 è un'altra: la correzione finisce nel posto sbagliato, senza errori.
+- **Controlla prima di modificare**: `riga.sum()` deve dare 1. Se dà 0 la condizione è sbagliata; se dà di più stai per cambiare più celle.
+
+Per unire due condizioni si usa `&` ("e"), e ogni condizione va tra parentesi. Per "oppure" si usa `|`.
+
+## Valori mancanti
+
+In pandas un valore mancante si chiama **NaN** (o `NA`). Per contarli:
+
+```python
+df.isna().sum()          # quanti mancanti in ogni colonna
+```
+
+Un valore mancante **non è uno zero**. Media di 10, mancante, 20:
+- lasciando il mancante: $\frac{10 + 20}{2} = 15$
+- mettendo 0 al suo posto: $\frac{10 + 0 + 20}{3} = 10$
+
+I calcoli di pandas ignorano i valori mancanti. Riempirli con un numero inventato falsa i risultati.
+
+Cosa farne è una **decisione**, da scrivere come le altre:
+
+| Decisione | Come | Quando ha senso |
+|---|---|---|
+| lasciarli | non fai niente | quasi sempre: media, mediana e `groupby` li ignorano da soli |
+| togliere le righe | `df.dropna(subset=["fatturato"])` | quando un'analisi richiede quel valore (un confronto, un grafico, una regressione) |
+| riempirli | `df["spesa_rs"].fillna(0)` | solo se sai che il mancante vuol dire davvero zero (per esempio: "nessuna spesa") |
+
+Con `subset` togli solo le righe in cui manca **quella** colonna; senza, togli le righe in cui manca **qualunque** colonna, e rischi di perdere molti dati. Conta le righe prima e dopo.
+
+## Le date
+
+Una data scritta come testo (`"15/03/2018"`) per Python è solo una sequenza di caratteri: non si può ordinare né sapere che anno è. `pd.to_datetime` la trasforma in una vera data:
+
+```python
+df["data_costituzione"] = pd.to_datetime(df["data_costituzione"], dayfirst=True)
+df["data_costituzione"].dt.year     # l'anno
+df["data_costituzione"].dt.month    # il mese
+```
+
+`dayfirst=True` dice che il giorno viene prima del mese, come in Italia. Dopo la conversione, conta i valori mancanti: le date che pandas non è riuscito a leggere diventano mancanti.
+
+## 🎯 Sfida
+
+Alla fine del task il dataset deve avere **2.500 righe**, **20 regioni** e un fatturato **numerico** e plausibile.
+
+Attenzione: la conversione del fatturato si può sbagliare in un modo che non produce nessun errore, ma butta via più della metà dei dati. Usa la regola: conta prima, conta dopo.
+
+Le soluzioni sono disponibili dopo la lezione, ma leggerle prima ti toglie l'unica cosa che conta: arrivarci da solo.
+
+## Compito a casa
+
+- [Kaggle Learn – Pandas](https://www.kaggle.com/learn/pandas), lezione **Data Types and Missing Values** (~20 min)
+
+## Per approfondire
+
+- [W3Schools – Pandas, pulizia dei dati](https://www.w3schools.com/python/pandas/pandas_cleaning.asp): prontuario
+- [QuantEcon – Pandas](https://python-programming.quantecon.org/pandas.html): facoltativo
