@@ -117,6 +117,7 @@ Un grafico onesto ha un titolo, gli assi con le unità di misura, le barre in or
 
 ## Compito a casa
 
+- Gli esercizi D1–D4 sui grafici, in fondo al notebook del task (~30 min)
 - [Kaggle Learn – Pandas](https://www.kaggle.com/learn/pandas), lezione **Grouping and Sorting** (~20 min)
 
 ## Per approfondire
